@@ -1,0 +1,45 @@
+.news-artical-cards{
+    margin: 20px 0;
+    padding: 10px;
+    max-height: 600px;
+    width:400px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.014);
+    position: relative;
+}
+.news-img{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.new-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.artical-info{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.new-author{
+   font-size: 15px;
+   color:#3c6a9b;
+   
+}
+
+.new-publish{
+    font-size: 12px;
+   
+}
+.btn-read-more{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    background-color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+}
