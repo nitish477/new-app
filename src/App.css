@@ -12,3 +12,7 @@
   border-radius: 30px;
   border: 1px solid #ccc;
 }
+.app-name{
+  text-align: center;
+  color: rgb(243, 153, 42);
+}

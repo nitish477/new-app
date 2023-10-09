@@ -11,7 +11,7 @@ const [search,setSearch]=useState('pune')
  const loadNews =async ()=>{
    try{
     
-    const response = await axios.get(`https://newsapi.org/v2/everything?q=${search}&from=2023-10-07&to=2023-10-07&sortBy=popularity&apiKey=d79fb9375c1e4bdaabe609587eb42cd8`)
+    const response = await axios.get(`https://newsapi.org/v2/everything?q=${search}&from=2023-10-07&to=2023-10-07&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`)
     setNews(response.data.articles)
     console.log(response.data.articles)
    }catch(err){
@@ -29,7 +29,7 @@ const [search,setSearch]=useState('pune')
 
   return (
     <>  
-    <h1>New App</h1>
+    <h1 className='app-name'>New App</h1>
 
     <input 
     placeholder='Search' 
